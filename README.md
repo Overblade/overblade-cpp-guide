@@ -1,2 +1,2 @@
-# cpp-tutorial
-C++ tutorial for everyone
+# C++ Tutorial
+
