@@ -42,7 +42,7 @@ there must always be exactly one global function named `main`. Don't worry if yo
 std::cout << "Hello World!" << std::endl;
 ```
 
-Remember when we included `iostream`? This is where we use an *object* named `std::cout` ("console out"). Again, if this sounds cryptic to you, don't worry. 
+Remember when we included `iostream`? This is where we use an *object* named `std::cout` ("character output"). Again, if this sounds cryptic to you, don't worry. 
 Objects will be covered later, too.
 
 However, there is going on much more in this single line. `<<` denotes that whatever follows it gets printed to `std::cout`. It basically denotes something on the right
