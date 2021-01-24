@@ -5,11 +5,10 @@ After getting scared by UB we'll take our time to relax a bit by looking at some
 ## What are operators?
 
 Operators (like the name already implies) *operate* on variables/data. They take values (operands) and calculate something based on those values.
-We can subdivide operators into two groups: Unary and binary operators.
 
-## Binary operators
+## Binary arithmetic operators
 
-Binary operators take two operands and return a result. The probably most famous ones are the *addition and subtraction operators*.
+Binary arithmetic operators take two operands, perform some arithmetic on them and return a result. The probably most famous ones are the *addition and subtraction operators*.
 Let's take a look at some examples:
 
 ```cpp
@@ -65,4 +64,36 @@ float b = 5 / 2.0;
 ```
 
 2.0 is a floating-point constant, so the divisor has the type `float`, causing the division to operate on floats. That way we obtain the expected `2.5` for `b`.
+
+To conclude, `/` carries out integer division if the divisor has an integer type and floating-point division if the divisor has a floating-point type.
+
+There is one last operator belonging to this group and is closely related to `/` for integer division: The modulo operator `%`.
+Modulo returns the remainder of an integer division:
+
+```cpp
+int a = 5 % 2;
+```
+
+Since 5 divided by 2 yields 2 with a remainder of 1, `a` will hold the value 1.
+
+Note that modulo only works for integers and having a divisor of 0 when performing integer division / modulo causes undefined behaviour. You should never try to divide by 0 anyways.
+
+## Unary arithmetic operators
+
+There are two more arithmetic operators although these only operate on *one* value (therefore *unary*): `+` and `-`
+
+```cpp
+int a = +5;
+int b = -5;
+```
+
+I don't think we need to discuss the output, it should be fairly obvious. While it makes sense to have unary `-` to negate values, unary `+` *seems* to have no real use case.
+
+Actually, it does two things we won't discuss in detail right now:
+- Integer promotion (smaller types convert to int)
+- lvalue to rvalue conversion (conversion to "temporary")
+
+No need to know any of these effects yet, I'll just leave it here for completeness' sake.
+
+## Increment / decrement operators
 
