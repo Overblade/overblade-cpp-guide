@@ -228,7 +228,7 @@ lots of results on the internet in case you're curious.
 
 ## Conclusion
 
-Damn, this was a lot. Knowing all the operators is fundamental for writing code. So let's quickly summarize which operators we've seen:
+Wow, this was quite a lot. Knowing all the operators is fundamental for writing code. So let's quickly summarize which operators we've seen:
 
 - Binary arithmetics: `+`, `-`, `*`, `/`, `%`
 - Unary arithmetics: `+`, `-`
@@ -236,7 +236,7 @@ Damn, this was a lot. Knowing all the operators is fundamental for writing code.
 - Assignments: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
 - Parentheses: `()`
 
-There a couple more which are a bit difficult to explain without knowing some other basics first.
+There are a couple more which are a bit difficult to explain without knowing some other basics first.
 
 ## Exercises
 
